@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Mario Zapata Palazón">
+  <title>La accesibilidad de las imágenes en la web</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">La accesibilidad de las imágenes en la web</h1>
+  <p class="author">Mario Zapata Palazón</p>
+  <p class="date">Marzo 2024</p>
+</section>
+
+<section id="información-general" class="slide level1">
+<h1>Información general</h1>
+<ul>
+<li>Las imágenes y los gráficos hacen que los contenidos de una web
+resulten más agradables y fáciles de entender para muchas personas y, en
+particular, para quienes padecen discapacidades cognitivas y de
+aprendizaje.</li>
+</ul>
+</section>
+<section id="información-general-1" class="slide level1">
+<h1>Información general</h1>
+<ul>
+<li>Sirven como pistas que utilizan las personas con deficiencias
+visuales, incluidas las personas con baja visión, para orientarse en el
+contenido.</li>
+</ul>
+<p><img data-src="imagen1.png" style="width:35.0%"
+alt="Siluetas de distintas personas y animales" /> </p>
+</section>
+<section id="beneficios" class="slide level1">
+<h1>Beneficios</h1>
+<ul>
+<li><p>Las imágenes accesibles son beneficiosas en muchas situaciones,
+por ejemplo:</p></li>
+<li><p><strong>Personas que utilizan lectores de
+pantalla:</strong></p></li>
+<li><p>El texto alternativo puede leerse en voz alta o en
+Braille.</p></li>
+</ul>
+</section>
+<section id="beneficios-1" class="slide level1">
+<h1>Beneficios</h1>
+<ul>
+<li><strong>Personas que utilizan software de entrada de
+voz:</strong></li>
+<li>Los usuarios pueden enfocar un botón o una imagen vinculada con un
+solo comando de voz.</li>
+</ul>
+<p><img data-src="imagen2.png" style="width:40.0%"
+alt="Los dedos de una persona leyendo braille" /> </p>
+</section>
+<section id="beneficios-2" class="slide level1">
+<h1>Beneficios</h1>
+<ul>
+<li><p><strong>Personas que navegan por sitios web con
+voz:</strong></p></li>
+<li><p>La alternativa de texto puede leerse en voz alta</p></li>
+<li><p><strong>Usuarios de web móvil:</strong></p></li>
+<li><p>Las imágenes pueden desactivarse, especialmente en itinerancia de
+datos.</p></li>
+<li><p><strong>Optimización de motores de búsqueda:</strong></p></li>
+<li><p>Los motores de búsqueda indexan las imágenes.</p></li>
+</ul>
+</section>
+<section id="principios-básicos" class="slide level1">
+<h1>Principios básicos</h1>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Toda imagen debe tener un atributo <strong>alt</strong>.</li>
+<li>El texto alternativo <strong>(alt-text)</strong> puede
+proporcionarse en el <strong>“atributo alt”</strong> o en el contexto
+circundante de la imagen.</li>
+<li>El texto alternativo apropiado depende en gran medida del contexto
+de la imagen.</li>
+</ul>
+</div><div class="column">
+<p><img data-src="imagen3.png" style="width:120.0%"
+alt="Una barra de “Cargando” en la que crece el nivel de accesibilidad" /> </p>
+</div>
+</div>
+</section>
+<section id="principios-básicos-1" class="slide level1">
+<h1>Principios básicos</h1>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Las imágenes decorativas siguen necesitando un atributo alt, pero
+debe ser <strong>null alt=““</strong>.</li>
+<li>El texto alternativo debe ser sucinto y no contener las frases
+<strong>“imágenes de…”</strong> o <strong>“gráfico de…”</strong>.</li>
+</ul>
+</div><div class="column">
+<p><img data-src="imagen4.png" style="width:160.0%"
+alt="Una rueda de color" /> </p>
+</div>
+</div>
+</section>
+<section id="tipos-de-imágenes" class="slide level1">
+<h1>Tipos de imágenes</h1>
+<p>El tipo de información que proporcione en el texto alternativo se
+basa en la finalidad de la imagen. A continuación, veremos los tipos de
+imágenes más frecuentes.</p>
+</section>
+<section id="tipos-de-imágenes-1" class="slide level1">
+<h1>Tipos de imágenes</h1>
+<p><strong>Imágenes informativas</strong></p>
+<ul>
+<li>Imágenes que representan gráficamente conceptos e información,
+normalmente cuadros, fotos e ilustraciones. El texto alternativo debe
+ser al menos una breve descripción que transmita la información esencial
+presentada por la imagen.</li>
+</ul>
+</section>
+<section id="tipos-de-imágenes-2" class="slide level1">
+<h1>Tipos de imágenes</h1>
+<p><strong>Imágenes decorativas</strong></p>
+<ul>
+<li>Proporcione una alternativa de texto nulo (alt=““) cuando el único
+propósito de una imagen sea añadir decoración visual a la página, en
+lugar de transmitir información importante para la comprensión de la
+página.</li>
+</ul>
+</section>
+<section id="tipos-de-imágenes-3" class="slide level1">
+<h1>Tipos de imágenes</h1>
+<p><strong>Imágenes funcionales</strong></p>
+<ul>
+<li>La alternativa de texto de una imagen utilizada como enlace o como
+botón debe describir la funcionalidad del enlace o del botón más que la
+imagen visual. Ejemplos de este tipo de imágenes son un icono de
+impresora para representar la función de impresión o un botón para
+enviar un formulario.</li>
+</ul>
+</section>
+<section id="tipos-de-imágenes-4" class="slide level1">
+<h1>Tipos de imágenes</h1>
+<p><strong>Imágenes de texto</strong></p>
+<ul>
+<li>A veces se presenta texto legible dentro de una imagen. Si la imagen
+no es un logotipo, evite el texto en imágenes. Sin embargo, si se
+utilizan imágenes de texto, la alternativa de texto debe contener las
+mismas palabras que en la imagen.</li>
+</ul>
+</section>
+<section id="tipos-de-imágenes-5" class="slide level1">
+<h1>Tipos de imágenes</h1>
+<p><strong>Imágenes complejas: como gráficos y diagramas</strong></p>
+<ul>
+<li>Para transmitir datos o información detallada, proporcione como
+alternativa de texto un equivalente en texto completo de los datos o la
+información proporcionados en la imagen.</li>
+</ul>
+</section>
+<section id="tipos-de-imágenes-6" class="slide level1">
+<h1>Tipos de imágenes</h1>
+<p><strong>Grupos de imágenes</strong></p>
+<ul>
+<li>Si varias imágenes transmiten una misma información, la alternativa
+de texto para una imagen debe transmitir la información de todo el
+grupo.</li>
+</ul>
+</section>
+<section id="tipos-de-imágenes-7" class="slide level1">
+<h1>Tipos de imágenes</h1>
+<p><strong>Mapas de imágenes</strong></p>
+<ul>
+<li>La alternativa de texto para una imagen que contiene múltiples áreas
+sobre las que se puede hacer clic debe proporcionar un contexto general
+para el conjunto de enlaces. Además, cada área sobre la que se pueda
+hacer clic debe tener un texto alternativo que describa la finalidad o
+el destino del enlace.</li>
+</ul>
+</section>
+<section id="más-información" class="slide level1">
+<h1>Más información</h1>
+<ul>
+<li><p>Para encontrar más información, explicada al detalle, puedes
+visitar los siguientes enlaces:</p></li>
+<li><p><a href="https://guides.cuny.edu/accessibility/images">The City
+University of New York</a></p></li>
+<li><p><a href="https://www.w3.org/WAI/tutorials/images/">Web
+Accessibility Initiative</a></p></li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

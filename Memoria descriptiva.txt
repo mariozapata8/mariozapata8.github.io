@@ -1,0 +1,17 @@
+Memoria descriptiva.
+
+Las técnicas de accesibilidad utilizadas en la presentación han sido:
+
+- Portabilidad: estas diapositivas se podrían leer igual de fácilmente en cualquier dispositivo, como un móvil, una tablet o un ordenador.
+
+- Texto alternativo: las cuatro imágenes de la presentación cuentan con sus respectivos textos alternativos, para una persona con discapacidad visual pueda saber qué se ve en la imagen.
+
+- Exportabilidad: estas diapositivas son fácilmente exportables a un formato PDF.
+
+- Compatibilidad: la mayoría de los navegadores (Chrome, Firefox, Safari...) pueden leer esta presentación.
+
+- Operabilidad: cualquier usuario puede moverse por las diapositivas gracias a los controles y botones.
+
+- Claridad: el diseño de las diapositivas es claro y ayuda a que el lector lo perciva correctamente.
+
+- Enlaces: los links del final de la presentación son significativos.
